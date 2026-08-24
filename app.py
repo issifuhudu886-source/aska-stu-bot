@@ -262,6 +262,8 @@ with gr.Blocks(title="ASKA — STU Student Assistant") as demo:
 
 if __name__ == "__main__":
     demo.launch(
-        theme=THEME, 
-        css=CUSTOM_CSS  # <-- pass the actual content, not filename
+        theme=THEME,
+        css=CUSTOM_CSS,
+        server_name="0.0.0.0", 
+        server_port=10000
     )
